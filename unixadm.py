@@ -2,11 +2,16 @@ __author__ = 'Dudentag'
 import stat, sys, os, string, commands
 from PIL import Image
 from PIL import ImageDraw
+from MainFunctions import MainFunctions
+
+mainFunctions = MainFunctions()
 
 def getSize(txt, font):
     testImg = Image.new('RGB', (1, 1))
     testDraw = ImageDraw.Draw(testImg)
     return testDraw.textsize(txt, font)
+
+mainFunctions
 
 if __name__ == '__main__':
 

@@ -5,4 +5,5 @@ class MainFunctions(object):
         self.stringshandler = None
 
         def laCacona(self, text):
+            self.stringshandler = text
             print(text)
